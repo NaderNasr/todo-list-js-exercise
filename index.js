@@ -20,9 +20,13 @@ const task1 = newTask("Clean Cat Litter", "Then do task 2"); // task 0
 const task2 = newTask("Do Laundry", "Then do task 1"); // task 1
 const tasks = [ task1, task2 ];
 
-task1.logTask(); // Clean Cat Litter has not been completed
-task1.completeTask();
-task1.logTask(); // Clean Cat Litter has been completed
+// tasks[0].logTask(); // Clean Cat Litter has not been completed
+// tasks[0].completeTask();
+// tasks[0].logTask(); // Clean Cat Litter has been completed
+for (let i of tasks) {
+  i.completeTask();
+  i.logTask();
+}
 
 
 // logTaskState(0); // Clean Cat Litter has not been completed
